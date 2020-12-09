@@ -1,0 +1,54 @@
+{
+  "list": "Orders list",
+  "@list": {
+    "description": "Title of order list"
+  },
+  "neworder": "New Order",
+  "@neworder": {
+    "description": "Title of new order"
+  },
+  "editorder": "Edit Order",
+  "@editorder": {
+    "description": "Title of edit order"
+  },
+  "updateorder": "Update order",
+  "@updateorder": {
+    "description": "Title of update order"
+  },
+  "insertorder": "Insert order",
+  "@insertorder": {
+    "description": "Title of insert product"
+  },
+  "name": "Name",
+  "@name": {
+    "description": "Name"
+  },
+  "price": "Price",
+  "@price": {
+    "description": "Price"
+  },
+  "editproduct": "Edit Product",
+  "@editproduct": {
+    "description": "Edit Product"
+  },
+  "newproduct": "New product",
+  "@newproduct": {
+    "description": "New product"
+  },
+  "insertproduct": "Insert product",
+  "@insertproduct": {
+    "description": "Insert product"
+  },
+  "productslist": "Registered products in the order",
+  "@productslist": {
+    "description": "Registered Products"
+  },
+  "listtype": "List type",
+  "@listtype": {
+    "description": "List type"
+  },
+  "changelist": "Change list order",
+  "@changelist": {
+    "description": "Change list order"
+  }
+}

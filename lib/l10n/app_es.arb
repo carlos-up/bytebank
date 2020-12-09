@@ -1,0 +1,15 @@
+{
+  "list": "Lista de Pedidos",
+  "neworder": "Nuevo Pedido",
+  "editorder": "Cambiar Pedido",
+  "updateorder": "Actualizar pedido",
+  "insertorder": "Insertar pedido",
+  "name": "Nombre",
+  "price": "Precio",
+  "editproduct": "Cambiar Producto",
+  "newproduct": "Nuevo producto",
+  "insertproduct": "Insertar producto",
+  "productslist": "Productos registrados en el pedido",
+  "listtype": "Tipo de lista",
+  "changelist": "Cambiar el orden de la lista"
+}
