@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "821334628099",
-    "project_id": "upentregas-8a978",
-    "storage_bucket": "upentregas-8a978.appspot.com"
+    "project_number": "338565178213",
+    "project_id": "crud-b71d7",
+    "storage_bucket": "crud-b71d7.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:821334628099:android:e45e206145d4705da9fb36",
+        "mobilesdk_app_id": "1:338565178213:android:a62b65cf846af61011778c",
         "android_client_info": {
           "package_name": "com.example.bytebank"
         }
       },
       "oauth_client": [
         {
-          "client_id": "821334628099-kilfisth59fea6opgbqsjtp9tn3ksguc.apps.googleusercontent.com",
+          "client_id": "338565178213-0bh2q9fc525siue8kgif46i15p07q3jt.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDlGhPZ-Y8EDJmnwBqQLXwe8wJSv8rl6jY"
+          "current_key": "AIzaSyBPC7kcv4xrScKdUA_Vd8JPT74pK3a_xy4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "821334628099-kilfisth59fea6opgbqsjtp9tn3ksguc.apps.googleusercontent.com",
+              "client_id": "338565178213-0bh2q9fc525siue8kgif46i15p07q3jt.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

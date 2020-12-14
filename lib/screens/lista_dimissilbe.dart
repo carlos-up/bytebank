@@ -86,8 +86,8 @@ class _ListaDimissibleState extends State<ListaDimissible> {
               },
             ),
           ),
-          Divider(),
-          Title(
+          //Divider(),
+          /*Title(
               color: Colors.white,
               child: Text(AppLocalizations.of(context).changelist,
                   style: TextStyle(fontSize: 18))),
@@ -151,8 +151,8 @@ class _ListaDimissibleState extends State<ListaDimissible> {
                 },
               ),
             ],
-          ),
-          Divider(),
+          ),*/
+          /*Divider(),
           Expanded(
             child: SizedBox(
               child: StreamBuilder<QuerySnapshot>(
@@ -213,6 +213,67 @@ class _ListaDimissibleState extends State<ListaDimissible> {
                         ),
                       );
                   }
+                },
+              ),
+            ),
+          ),*/
+          Expanded(
+            child: SizedBox(
+              child: StreamBuilder<QuerySnapshot>(
+                stream: db
+                    .collection('Romaneios1')
+                    .doc('1')
+                    .collection('Entregas')
+                    .doc('180856')
+                    .collection('Itens')
+                    .snapshots(),
+                builder: (context, snapshot) {
+                  if (snapshot.hasData) {
+                    return SizedBox(
+                      child: Padding(
+                        padding: const EdgeInsets.all(1.0),
+                        child: new ListView(
+                          key: UniqueKey(),
+                          children: snapshot.data.docs.map(
+                            (document) {
+                              final item = document['Descrição'];
+                              return new Dismissible(
+                                key: Key(item),
+                                /*onDismissed: (direction) async {
+                                  await db
+                                      .collection('pedidos')
+                                      .doc(widget.pedido.id)
+                                      .collection('produtos')
+                                      .doc(document.id)
+                                      .delete();
+                                },*/
+                                background: Container(
+                                  color: Colors.red,
+                                  child: Align(
+                                    alignment: Alignment(-0.9, 0),
+                                    child: Icon(
+                                      Icons.delete,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
+                                child: new ListTile(
+                                  title: new Text(
+                                    document['Descrição'],
+                                    style: TextStyle(fontSize: 22),
+                                  ),
+                                  subtitle: new Text(
+                                      document['VrTotal'].toString(),
+                                      style: TextStyle(fontSize: 22)),
+                                ),
+                              );
+                            },
+                          ).toList(),
+                        ),
+                      ),
+                    );
+                  }
+                  return CircularProgressIndicator();
                 },
               ),
             ),
